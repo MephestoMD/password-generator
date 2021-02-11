@@ -21,31 +21,31 @@ Using simple javascript commands such as **prompt**, **alert**, and **confirm** 
 The user is initially presented with the following page:
 
 
-![Password Generator](Assets\03-javascript-homework-demo.png)
+![Password Generator](Assets/03-javascript-homework-demo.png)
 
 Upon clicking the "Generate Password" button, the user is presented with a series of pop-up prompts, beginning with the prompt to specify the number of characters needed for the password:
 
-![Number of characters prompt](Assets\numChars.PNG)
+![Number of characters prompt](Assets/numChars.PNG)
 
 If the user enters a number of characters outside the acceptable range (8-128), the application will alert the user of the character range requirement and again give the user an opportunity to enter the number of desired characters. This will continue until an approriate number of characters is entered.
 
 Next, the user is presented with a series of prompts to determine what specific character criteria are needed for the password, including uppercase, lowercase, numbers, and special characters to be included or excluded from the password:
 
-![Uppercase prompt](Assets\upCase.PNG)
+![Uppercase prompt](Assets/upCase.PNG)
 
-![Lowercase prompt](Assets\lowCase.PNG)
+![Lowercase prompt](Assets/lowCase.PNG)
 
-![Numbers prompt](Assets\nums.PNG)
+![Numbers prompt](Assets/nums.PNG)
 
-![Special characters prompt](Assets\specChars.PNG)
+![Special characters prompt](Assets/specChars.PNG)
 
 If the user fails to select for *any* of the criteria, an alert will appear letting the user know that they must select at least one criteria:
 
-![Failed to enter criteria prompt](Assets\failedCriteria.PNG)
+![Failed to enter criteria prompt](Assets/failedCriteria.PNG)
 
 After all the relevant criteria are entered, the code will generate a random password and it will appear in the box above the button:
 
-![Password generated](Assets\passwordGenerated.PNG)
+![Password generated](Assets/passwordGenerated.PNG)
 
 ## Credits
 
