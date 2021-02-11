@@ -39,7 +39,7 @@ Next, the user is presented with a series of prompts to determine what specific 
 
 ![Special characters prompt](Assets/specChars.PNG)
 
-If the user fails to select for *any* of the criteria, an alert will appear letting the user know that they must select at least one criteria:
+If the user fails to select for *any* of the criteria, an alert will appear letting the user know that they must select at least one criterion:
 
 ![Failed to enter criteria prompt](Assets/failedCriteria.PNG)
 
