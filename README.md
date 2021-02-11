@@ -2,43 +2,50 @@
 
 <a href="https://mephestomd.github.io/horiseon-access/">Horiseon Accessibility</a>
 
-*Optimizing an application for accessibility*
+*A random password generator with user-defined criteria*
 
 ## Goal
 
-To transform a visually complete web application into one which appears identical at the surface, but through the use of semantic elements and code consolidation, is easier to use for both visually impaired end-users and for future developers looking to improve upon this application.
+To create a user-friendly, easily accessible password generator designed to be adaptable to a wide range of potential password requirements which can be defined easily by the user.
 
 ## Purpose
 
-Semantic elements make a web application easier to work with, both for the visually impaired and for future developers who may need to dive into the code in order to update content. For the visually impaired speifically, screen readers in use today require semantic elements in the HTML they analyze in order to properly convey the structure of the application to the end-user. Without these semantic elements, the user may find the webpage inaccessible.
+As the danger of cybercrime becomes more and more prevalent in today's increasingly web-based world, the need for secure passwords is ever-present. With a simple password generator such as this one, anyone will be able to generate secure passwords applicable to any website depending on the demands of that site's password criteria.
 
 ## Method
 
-While visually appealing, the webpage in its initial form was lacking in semantic HTML elements, opting to use **< div >** elements in many places where tags such as **< section >**, **< header >**, **< article >** would be more suitable to provide better semantic structure. These **< div >** elements were replaced with the aforementioned semantic elements where appropriate. In addition, much of the CSS styling contained redundant code which, after being condensed, will allow for future developers to more easily update their content. 
+Using simple javascript commands such as **prompt**, **alert**, and **confirm** along with an event listener tied to a prominent **button**, an easy-to-understand user-interface was developed to allow anyone to generate a secure password with user-definied criteria. The generation of the password was handled using a **for** loop and array manipulation, with the core function returning a **string** containing the the password with the user-defined criteria.
 
 ## Usage
 
-The following will give examples and screenshots of where the non-semantic **< div >** tags were replaced with properly semantic tags:
+The user is initially presented with the following page:
 
 
-**< header >** tag replaced **< div >** tags here:
+![Password Generator](Assets\03-javascript-homework-demo.png)
 
+Upon clicking the "Generate Password" button, the user is presented with a series of pop-up prompts, beginning with the prompt to specify the number of characters needed for the password:
 
-![Header and Navigation](/Develop/assets/images/Header.PNG)
+![Number of characters prompt](Assets\numChars.PNG)
 
-**< section >** container was used to hold each of the following three items and **< article >** tags were used for each individual item (where previously **< div >** tags had been used):
+If the user enters a number of characters outside the acceptable range (8-128), the application will alert the user of the character range requirement and again give the user an opportunity to enter the number of desired characters. This will continue until an approriate number of characters is entered.
 
+Next, the user is presented with a series of prompts to determine what specific character criteria are needed for the password, including uppercase, lowercase, numbers, and special characters to be included or excluded from the password:
 
-![Search Engine Optimization](/Develop/assets/images/SEO.PNG)
+![Uppercase prompt](Assets\upCase.PNG)
 
-![Online Reputation Management](/Develop/assets/images/ORM.PNG)
+![Lowercase prompt](Assets\lowCase.PNG)
 
-![Social Media Marketing](/Develop/assets/images/SMM.PNG)
+![Numbers prompt](Assets\nums.PNG)
 
-**< aside >** container used for the aside element of the application, again in place of **< div >** tags:
+![Special characters prompt](Assets\specChars.PNG)
 
+If the user fails to select for *any* of the criteria, an alert will appear letting the user know that they must select at least one criteria:
 
-![Aside](/Develop/assets/images/Aside.PNG)
+![Failed to enter criteria prompt](Assets\failedCriteria.PNG)
+
+After all the relevant criteria are entered, the code will generate a random password and it will appear in the box above the button:
+
+![Password generated](Assets\passwordGenerated.PNG)
 
 ## Credits
 
@@ -48,15 +55,15 @@ Valerie Flores - Mentor and tutor || <a href="https://github.com/valeriemiller5"
 </li>
 
 <li>
-Guillermo Barila - General Github support || <a href="https://github.com/gui365">Github</a>
+Guillermo Barila - General support || <a href="https://github.com/gui365">Github</a>
 </li>
 
 <li>
-Samuel Maddox - General CSS support || <a href="https://github.com/SamuelMaddox">Github</a>
+Samuel Maddox - Javascript methods || <a href="https://github.com/SamuelMaddox">Github</a>
 </li>
 
 <li>
-Tutorial on semantic HTML || <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">w3schools.com</a>
+Javascript methods || <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">MDN</a>
 </li>   
 </ul>
 
