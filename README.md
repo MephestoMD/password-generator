@@ -1,6 +1,6 @@
 # Random Password Generator
 
-<a href="https://mephestomd.github.io/horiseon-access/">Horiseon Accessibility</a>
+<a href="https://mephestomd.github.io/password-generator/">Random Password Generator</a>
 
 *A random password generator with user-defined criteria*
 
