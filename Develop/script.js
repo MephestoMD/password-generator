@@ -36,7 +36,7 @@ function generatePassword() {
 
   while (numChars > 128 || numChars < 8) {  // Ensure that the number selected fits the specified range and re-prompt if necessary
     alert("Please enter a number between 8-128");
-    generatePassword();
+    numChars = prompt("How many characters long do you want your password to be? (8-128 characers, please)");
   }
 
   // Prompt user for password criteria and create an array incrementally to hold possible characters for password
@@ -54,6 +54,7 @@ function generatePassword() {
  if (confirm("Do you want the password to include special characters?")) {
    charSet = charSet.concat(spec);
  }
+ debugger;
   //Alert the user that they selected zero criteria
   if (charSet.length === 0) {
     alert("You must select at least one criterion for password generation! Try again."); 
